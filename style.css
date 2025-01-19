@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+.lato-font {
+  font-family: "Lato", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+*{
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+/* Shared styles */
+.primary-btn{
+  background-color: #E55473;
+  color: white;
+  border-style: none;
+  border-radius: 8px;
+  padding: 20px 40px;
+  font-size: 20px;
+  font-weight: 700;
+}
+.primary-btn:hover{
+  background-color: #008000;
+  transform: scale(1.07);
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.primary-description{
+  font-size: 18px;
+  opacity: 60%;
+}
+
+/* Header styles */
+#hero{
+  background-color: #e5547310;
+  display: flex;
+  justify-content: space-between;
+  gap: 100px;
+}
+.hero-title{
+  margin: 200px 0px 150px 240px;
+}
+#hero h1{
+  font-size: 80px;
+  font-weight: 800;
+  padding-bottom: 32px;
+}
+#hero p{
+  padding-bottom: 32px;
+}
+#hero img{
+  padding: 50px 240px 0px 0px;
+}
+
+@media screen and (max-width:576px){
+  #hero{
+   flex-direction: column;
+   gap: 10px;
+  }
+  .hero-title{
+    margin: 20px 0px 20px 20px;
+  }
+  #hero img{
+    padding: 10px 20px 0px 0px;
+    width: 100%;
+  }
+  #hero h1{
+    font-size: 40px;
+  }
+}
