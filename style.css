@@ -18,7 +18,7 @@
   color: white;
   border-style: none;
   border-radius: 8px;
-  padding: 15px 30px;
+  padding: 13px 28px;
   font-size: 15px;
   font-weight: 700;
 }
@@ -39,19 +39,19 @@
 #hero {
   background-color: rgba(229, 84, 115, 0.1);
   display: flex;
-  justify-content: space-between;
-  gap: 100px;
-  height: 600px;
-  max-width: 1280px;
+  justify-content: center;
+  gap: 66px;
+  height: 561px;
   margin: 0 auto;
 }
 
 .hero-title {
-  padding: 130px 0px 100px 150px;
+  margin: 130px 0px 95px 0px;
+  width: 467px;
 }
 
 #hero h1 {
-  font-size: 50px;
+  font-size: 52px;
   font-weight: 800;
   padding-bottom: 20px;
   opacity: 80%;
@@ -62,7 +62,7 @@
 }
 
 #hero img {
-  padding: 30px 150px 0px 0px;
+  padding-top: 33px;
 }
 
 /* Our featured */
@@ -143,11 +143,42 @@
   opacity: 80%;
 }
 
+/* Hot Deal  */
+#hot-deal {
+  background-color: rgba(229, 84, 115, 0.05);
+  display: flex;
+  height: 409px;
+  justify-content: center;
+  align-items: center;
+  gap: 122px;
+}
+
+.hot-deal-title {
+  width: 392px;
+  text-align: center;
+}
+
+.hot-deal-title h3 {
+  padding-bottom: 20px;
+  font-size: 26px;
+  font-weight: 800;
+}
+
+.hot-deal-title p {
+  padding-bottom: 20px;
+}
+
+.Off {
+  color: #E55473;
+}
+
+
 
 /* Responsive styles */
 @media screen and (max-width:576px) {
 
   /* Hero section */
+
   #hero {
     flex-direction: column;
     gap: 10px;
@@ -155,11 +186,17 @@
   }
 
   .hero-title {
-    padding: 20px;
+    margin: 30px 0px 25px 0px;
+    width: auto;
+    padding: 10px;
+  }
+
+  #hero h1 {
+    font-size: 42px;
   }
 
   #hero img {
-    padding: 10px 20px 0px 20px;
+    padding: 0px 20px 0px 20px;
     width: 100%;
   }
 
@@ -174,6 +211,9 @@
   .our-featured-cards {
     flex-direction: column;
   }
+  .card{
+    padding-top: 20px;
+  }
 
   .our-featured-details {
     flex-direction: column;
@@ -182,7 +222,20 @@
     width: auto;
     padding: 60px 100px;
   }
+
   .our-featured-title {
     width: auto;
+  }
+
+  /* Hot Deal  */
+  #hot-deal {
+    height: auto;
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .hot-deal-title {
+    width: auto;
+    margin: 50px 20px 0px;
   }
 }
