@@ -245,6 +245,43 @@ input::placeholder {
 
 
 
+
+/* footer section */
+footer {
+  background-color: #111010;
+  text-align: center;
+}
+
+footer h2 {
+  color: white;
+  font-size: 40px;
+  font-weight: 800;
+  padding-top: 85px;
+}
+
+footer h6 {
+  color: white;
+  font-size: 14px;
+  opacity: 90%;
+  max-width: 440px;
+  margin: 0 auto;
+  padding: 20px 0px 25px 0px;
+  font-weight: 400;
+}
+
+.footer-flower {
+  color: #E55473;
+}
+
+footer p {
+  color: white;
+  font-size: 12px;
+  opacity: 40%;
+  padding-bottom: 80px;
+}
+
+
+
 /* Responsive styles */
 @media screen and (max-width:576px) {
 
@@ -323,6 +360,9 @@ input::placeholder {
 
 
   /* Get The Latest Deals */
+  #deals {
+    margin: 0px 0pc 20px 0px;
+  }
 
   .deals-container {
     height: auto;
@@ -339,11 +379,22 @@ input::placeholder {
     width: auto;
   }
 
-  .deals-submit{
-  padding: 13px 13px;
+  .deals-submit {
+    padding: 13px 13px;
   }
-.deals-sub{
-  padding-bottom: 20px;
-}
+
+  .deals-sub {
+    padding-bottom: 20px;
+  }
+
+
+
+
+  /* footer section */
+
+  footer h6 {
+    padding: 10px;
+  }
+
 
 }
